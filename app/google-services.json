@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "218197311810",
+    "firebase_url": "https://iotprojectitfinalyear-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "iotprojectitfinalyear",
+    "storage_bucket": "iotprojectitfinalyear.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218197311810:android:14df5fb471de390467c8db",
+        "android_client_info": {
+          "package_name": "com.it.iot.project.smartirrigationiot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218197311810-i7bi2981gm185hnho25gk9rtv8gprs1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD84HMLUT05wc9ZVoObIzSWvzMnSXGHvXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218197311810-i7bi2981gm185hnho25gk9rtv8gprs1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

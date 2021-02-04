@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Smart Irrigation IOT</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="return_temperature">Return temperature</string>
+    <string name="current_humidity">Current humidity</string>
+    <string name="warning_message"><![CDATA[<font color=#F9DA0A>•</font> - extreme humidity levels.
+Use precaution for set-points outside of 30%-80%]]></string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="title_overview">Overview</string>
+    <string name="title_analysis">Analysis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_solenoid">Solenoid Valve</string>
+    <string name="label_solenoid_on">Solenoid Valve ON</string>
+    <string name="label_solenoid_off">Solenoid Valve OFF</string>
+
+
+</resources>

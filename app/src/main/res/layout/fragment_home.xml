@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <com.github.mikephil.charting.charts.PieChart-->
+    <!--            android:id="@+id/chart"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="250dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            />-->
+
+    <!--    </LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/top_moisture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/moisture_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="25dp"
+            android:text="47 %"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            tools:ignore="MissingConstraints" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:cpb_background_progressbar_color="@android:color/darker_gray"
+            app:cpb_background_progressbar_width="3dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="#4bd25b"
+            app:cpb_progressbar_width="4dp"
+            app:cpb_round_border="false"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dht1_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_moisture">
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:textSize="16sp"
+            android:text="0.7 % "
+
+            app:drawableStartCompat="@drawable/icons8_hygrometer_48" />
+
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            android:text="25 "
+            app:drawableStartCompat="@drawable/icons8_thermometer_48" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/solenoid_valve"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:text="@string/label_solenoid"
+        android:layout_marginBottom="200dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="MissingConstraints"
+        app:useMaterialThemeColors="true"
+        android:textColor="@color/black"
+
+        android:clickable="false"
+
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
